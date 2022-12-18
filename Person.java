@@ -7,6 +7,7 @@ public class Person
     private final String email;
     private Person recipient;
     private final ArrayList<String> noList = new ArrayList<>();
+    private final ArrayList<String> hobbies = new ArrayList<>();
 
     public Person(String forename, String surname, String email)
     {
@@ -26,4 +27,10 @@ public class Person
 
     public void setRecipient(Person recipient) { this.recipient = recipient; }
     public void addToNoList(String targetEmail) { this.noList.add(targetEmail); }
+    public void addToHobbies(String hobby) {this.hobbies.add(hobby); }
+    public String getHobbies()
+    {
+        String hobbiesString = String.join(", ", hobbies);
+        return hobbiesString;
+    }
 }

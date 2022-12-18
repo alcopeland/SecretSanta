@@ -19,7 +19,9 @@ public class ReadFile
                 String[] personInfo = scanner.nextLine().split(",");
                 people.add(new Person(personInfo[0], personInfo[1], personInfo[2]));
                 personInfo = scanner.nextLine().split(",");
-                for (String s : personInfo) { people.get(target).addToNoList(s); }
+                for(String s : personInfo) { people.get(target).addToNoList(s); }
+                personInfo = scanner.nextLine().split(",");
+                for(String s : personInfo) { people.get(target).addToHobbies(s); }
                 target++;
             }
         }

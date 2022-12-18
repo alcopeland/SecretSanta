@@ -17,8 +17,8 @@ public class Logic
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         santas.forEach(person -> System.out.println(person.getEmail()+": "+person.getRecipient().getEmail()));
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        santas.forEach(this::sendEmail);
-
+        //santas.forEach(this::sendEmail);
+        sendEmail(santas.get(0));
     }
     public void sendEmail(Person person)
     {

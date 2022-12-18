@@ -8,11 +8,19 @@ public class SendEmail
 {
     // email address = secretSantaSender14@gmail.com
     // password = emailSending
-    private final String sender = "secretSantaSender14@gmail.com";
+    private final String sender = "secretsantasender14@gmail.com";
     private String msg;
     public SendEmail(Person person, String password)
     {
-        msg = "Hello "+person.getForename()+"\n\nYour Secret Santa is: "+person.getRecipient().getForename()+" "+person.getRecipient().getSurname()+"\nGood Luck\n\nSanta";
+        msg = "Hello "+person.getForename()+"\n" +
+                "\n" +
+                "Your Secret Santa is: "+person.getRecipient().getForename()+" "+person.getRecipient().getSurname()+"\n" +
+                "\n" +
+                "They have said their hobbies are: \n" +
+                "" + person.getRecipient().getHobbies() + "\n" +
+                "Good Luck\n" +
+                "\n" +
+                "Santa";
 
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
