@@ -1,0 +1,12 @@
+Adam,Copeland,adamlcopeland1@gmail.com
+sam.copeland1995@gmail.com,neil.copeland@travelcounsellors.com
+Star Wars,Reading,Computer Science
+Sam,Copeland,sam.copeland1995@gmail.com
+adamlcopeland1@gmail.com,hazelccopeland1@gmail.com
+Bees,Game of Thrones
+Neil,Copeland,neil.copeland@travelcounsellors.com
+sam.copeland1995@gmail.com
+Travel
+Hazel,Copeland,hazelccopeland1@gmail.com
+adamlcopeland1@gmail.com
+Gardening
